@@ -1,0 +1,39 @@
+.button {
+    @apply flex items-center gap-2 rounded-xl bg-primary py-4 text-lg font-bold leading-[1.56] transition-colors duration-300 ease-linear;
+}
+
+.buttonPrimary {
+    @apply inline-block w-full;
+
+    &:is(:hover, :focus) {
+        @apply bg-primary-light;
+    }
+}
+
+.buttonSecondary {
+    @apply px-12;
+
+    &:is(:hover, :focus) {
+        @apply bg-primary-light;
+    }
+}
+
+.buttonRegistration {
+    @apply bg-black px-10 py-[14px] text-base leading-tight text-white;
+
+    &:is(:hover, :focus) {
+        @apply bg-primary text-black;
+    }
+}
+
+.buttonLogin {
+    @apply bg-transparent text-base leading-tight;
+}
+
+.buttonBurger {
+    @apply bg-transparent p-0
+}
+
+.loginIcon {
+    @apply h-5 w-5 fill-none stroke-primary;
+}

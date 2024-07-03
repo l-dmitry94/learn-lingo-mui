@@ -1,0 +1,15 @@
+.header {
+    @apply py-5;
+}
+
+.container {
+    @apply mx-auto max-w-[1232px] px-6;
+}
+
+.wrapper {
+    @apply flex items-center justify-between;
+}
+
+.burgerIcon {
+    @apply h-7 w-7 fill-none stroke-black;
+}

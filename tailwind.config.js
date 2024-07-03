@@ -18,6 +18,7 @@ export default {
             },
             screens: {
                 desktop: '1440px',
+                tablet: '768px',
             },
             letterSpacing: {
                 tight: '-0.02em',

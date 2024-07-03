@@ -62,5 +62,15 @@
             <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
                 stroke-width="3.2" d="M1.333 1.333l29.333 29.333"></path>
         </symbol>
+        <symbol id="icon-burger" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="2.2857" d="M22.667 13.333h-18.667"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="2.2857" d="M28 8h-24"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="2.2857" d="M28 18.667h-24"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                stroke-width="2.2857" d="M22.667 24h-18.667"></path>
+        </symbol>
     </defs>
 </svg>
