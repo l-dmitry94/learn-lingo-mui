@@ -1,24 +1,24 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Button, { Style } from 'components/Button';
 import scss from './AuthButtons.module.scss';
 
 const AuthButtons = () => {
-    const [loginModalIsOpen, setLoginModalIsOpen] = useState<boolean>(false);
-    const [RegistrationModalIsOpen, setRegistrationModalIsOpen] = useState<boolean>(false);
+    // const [loginModalIsOpen, setLoginModalIsOpen] = useState<boolean>(false);
+    // const [RegistrationModalIsOpen, setRegistrationModalIsOpen] = useState<boolean>(false);
 
     return (
         <>
             <div className={scss.buttons}>
                 <Button
                     type="button"
-                    onClick={() => setLoginModalIsOpen(true)}
+                    // onClick={() => setLoginModalIsOpen(true)}
                     buttonStyle={Style.Login}
                 >
                     Log in
                 </Button>
                 <Button
                     type="button"
-                    onClick={() => setRegistrationModalIsOpen(true)}
+                    // onClick={() => setRegistrationModalIsOpen(true)}
                     buttonStyle={Style.Registration}
                 >
                     Registration
