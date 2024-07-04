@@ -6,6 +6,7 @@ export enum Style {
     Registration,
     Login,
     Burger,
+    Close,
 }
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {

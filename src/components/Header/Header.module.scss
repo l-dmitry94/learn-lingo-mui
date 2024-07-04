@@ -11,5 +11,9 @@
 }
 
 .burgerIcon {
-    @apply h-7 w-7 fill-none stroke-black;
+    @apply h-7 w-7 fill-none stroke-black transition-colors duration-300 ease-linear;
+
+    &:is(:hover, :focus) {
+        @apply stroke-primary;
+    }
 }

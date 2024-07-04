@@ -31,7 +31,11 @@
 }
 
 .buttonBurger {
-    @apply bg-transparent p-0
+    @apply bg-transparent p-0;
+}
+
+.buttonClose {
+    @apply absolute right-5 top-5 bg-transparent p-0;
 }
 
 .loginIcon {

@@ -1,0 +1,23 @@
+.overlay {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.content {
+    @apply relative w-full max-w-[565px] rounded-[30px] bg-white p-16;
+}
+
+.closeIcon {
+    @apply h-8 w-8 fill-none stroke-black;
+}
+
+.info {
+    @apply mb-10;
+}
+
+.title {
+    @apply text-[40px] font-medium leading-[1.2] tracking-tight mb-5;
+}
+
+.description {
+    @apply leading-snug text-black/80;
+}

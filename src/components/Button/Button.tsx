@@ -14,7 +14,8 @@ const Button: FC<IButton> = ({ buttonStyle, children, ...rest }) => {
                 buttonStyle === Style.Secondary && scss.buttonSecondary,
                 buttonStyle === Style.Login && scss.buttonLogin,
                 buttonStyle === Style.Registration && scss.buttonRegistration,
-                buttonStyle === Style.Burger && scss.buttonBurger
+                buttonStyle === Style.Burger && scss.buttonBurger,
+                buttonStyle === Style.Close && scss.buttonClose
             )}
         >
             {buttonStyle === Style.Login && (
