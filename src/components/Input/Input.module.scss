@@ -1,0 +1,35 @@
+.wrapper {
+    @apply relative;
+}
+
+.input {
+    @apply h-[54px] w-full rounded-xl border border-black/10 pl-[18px] pr-14 leading-snug text-black outline-none transition-colors ease-linear;
+
+    &:is(:hover, :focus) {
+        @apply border-primary;
+    }
+
+    &::placeholder {
+        @apply text-black;
+    }
+}
+
+.inputError {
+    @apply border-red-500
+}
+
+.inputWrapper {
+    @apply relative;
+}
+
+.eyeButton {
+    @apply absolute right-[18px] top-1/2 -translate-y-1/2;
+}
+
+.eyeIcon {
+    @apply h-5 w-5 fill-none stroke-black;
+}
+
+.error {
+    @apply absolute left-0 top-full text-xs text-red-500;
+}

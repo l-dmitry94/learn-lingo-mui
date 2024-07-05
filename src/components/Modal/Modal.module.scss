@@ -1,5 +1,5 @@
-.overlay {
-    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+.modal {
+    @apply flex items-center justify-center p-6;
 }
 
 .content {
@@ -15,7 +15,7 @@
 }
 
 .title {
-    @apply text-[40px] font-medium leading-[1.2] tracking-tight mb-5;
+    @apply mb-5 text-[40px] font-medium leading-[1.2] tracking-tight;
 }
 
 .description {

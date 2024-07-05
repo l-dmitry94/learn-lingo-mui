@@ -1,8 +1,8 @@
 import { FC, ReactNode } from 'react';
 import { Backdrop, Fade, Modal as ReactModal } from '@mui/material';
-import scss from './Modal.module.scss';
 import Button, { Style } from 'components/Button';
 import { icons } from 'assets/icons';
+import scss from './Modal.module.scss';
 
 interface IModal {
     modalIsOpen: boolean;
@@ -15,8 +15,6 @@ interface IModal {
 const Modal: FC<IModal> = ({ modalIsOpen, closeModal, title, description, children }) => {
     return (
         <ReactModal
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
             open={modalIsOpen}
             onClose={closeModal}
             closeAfterTransition
@@ -26,25 +24,24 @@ const Modal: FC<IModal> = ({ modalIsOpen, closeModal, title, description, childr
                     timeout: 500,
                 },
             }}
+            className={scss.modal}
         >
             <Fade in={modalIsOpen}>
-                <div className={scss.overlay}>
-                    <div className={scss.content}>
-                        <Button
-                            buttonStyle={Style.Close}
-                            onClick={closeModal}
-                            className={scss.closeButton}
-                        >
-                            <svg className={scss.closeIcon}>
-                                <use href={`${icons}#icon-close`}></use>
-                            </svg>
-                        </Button>
-                        <div className={scss.info}>
-                            <h2 className={scss.title}>{title}</h2>
-                            <p className={scss.description}>{description}</p>
-                        </div>
-                        {children}
+                <div className={scss.content}>
+                    <Button
+                        buttonStyle={Style.Close}
+                        onClick={closeModal}
+                        className={scss.closeButton}
+                    >
+                        <svg className={scss.closeIcon}>
+                            <use href={`${icons}#icon-close`}></use>
+                        </svg>
+                    </Button>
+                    <div className={scss.info}>
+                        <h2 className={scss.title}>{title}</h2>
+                        <p className={scss.description}>{description}</p>
                     </div>
+                    {children}
                 </div>
             </Fade>
         </ReactModal>

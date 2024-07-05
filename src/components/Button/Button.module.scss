@@ -1,5 +1,5 @@
 .button {
-    @apply flex items-center gap-2 rounded-xl bg-primary py-4 text-lg font-bold leading-[1.56] transition-colors duration-300 ease-linear;
+    @apply flex items-center gap-2 rounded-xl bg-primary py-4 text-lg font-bold leading-[1.56] outline-none transition-colors duration-300 ease-linear;
 }
 
 .buttonPrimary {
