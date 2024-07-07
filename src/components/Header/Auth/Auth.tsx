@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import UserProfile from './UserProfile';
 import AuthButtons from './AuthButtons';
+import useAuth from 'hooks/useAuth';
 
 const Auth = () => {
-    const [isLogged] = useState<boolean>(false);
+    const { isLogged } = useAuth();
 
     return <>{isLogged ? <UserProfile /> : <AuthButtons />}</>;
 };
